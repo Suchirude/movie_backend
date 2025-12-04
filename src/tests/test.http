@@ -15,6 +15,7 @@ GET http://localhost:8000/movies?year=2019&director=Bong%20Joon-ho
 
 ###Post new movie
 POST http://localhost:8000/movies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9saXZlIiwiaWF0IjoxNzY0ODcwODUwLCJleHAiOjE3NjQ4NzQ0NTB9.xzhTo2p5m50moKUEAakjTyX9mCaYalZZNm_7al9RFNs
 Content-Type: application/json
 
 {
@@ -26,6 +27,7 @@ Content-Type: application/json
 ###Put updated movie
 PUT http://localhost:8000/movies/692994cd7ca9a55d5d9d8686
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9saXZlIiwiaWF0IjoxNzY0ODcwODUwLCJleHAiOjE3NjQ4NzQ0NTB9.xzhTo2p5m50moKUEAakjTyX9mCaYalZZNm_7al9RFNs
 
 {
   "title": "Wishmaster",
@@ -38,6 +40,7 @@ GET http://localhost:8000/movies/692994cd7ca9a55d5d9d8686
 
 ###Delete movie by id
 DELETE http://localhost:8000/movies/692994cd7ca9a55d5d9d8686
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9saXZlIiwiaWF0IjoxNzY0ODcwODUwLCJleHAiOjE3NjQ4NzQ0NTB9.xzhTo2p5m50moKUEAakjTyX9mCaYalZZNm_7al9RFNs
 
 ###Test false route
 GET http://localhost:8000/test
