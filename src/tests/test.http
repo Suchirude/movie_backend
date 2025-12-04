@@ -1,0 +1,43 @@
+###Base route
+GET http://localhost:8000/
+
+###Get all movies
+GET http://localhost:8000/movies
+
+###Get all movies 1999
+GET http://localhost:8000/movies?year=1999
+
+###Get all movies from Christopher Nolan
+GET http://localhost:8000/movies?director=Christopher%20Nolan
+
+###Get all movies from 2019 and from Bong Joon-ho
+GET http://localhost:8000/movies?year=2019&director=Bong%20Joon-ho
+
+###Post new movie
+POST http://localhost:8000/movies
+Content-Type: application/json
+
+{
+  "title": "Wishmaster",
+  "director": "Robert Kurtzman",
+  "year": 1997
+}
+
+###Put updated movie
+PUT http://localhost:8000/movies/692994cd7ca9a55d5d9d8686
+Content-Type: application/json
+
+{
+  "title": "Wishmaster",
+  "director": "Robert Kurtzman",
+  "year": 1997
+}
+
+###Get movie by id
+GET http://localhost:8000/movies/692994cd7ca9a55d5d9d8686
+
+###Delete movie by id
+DELETE http://localhost:8000/movies/692994cd7ca9a55d5d9d8686
+
+###Test false route
+GET http://localhost:8000/test
